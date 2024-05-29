@@ -13,6 +13,33 @@
 			.smaller-image {
 			width: 20%;
 			}
+			.container {
+				position: relative;
+				display: inline-block;   
+			}
+
+			.image {
+				display: block;
+				border-radius: 10px;
+				max-width: 100%;
+			}
+			.arxiv-label {
+				position: absolute;
+				top: 10px;
+				left: -5px;
+				background-color: #a624a6;
+				color: white;
+				padding: 0px 10px;
+				border-radius: 3px;
+				font-weight: bold;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				width: 40px;
+				height: 20px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: small;
+			}
 		</style>
 		<script type="text/javascript" src="./files/jquery-1.12.4.min.js"></script>
 </head>
@@ -180,6 +207,22 @@
 <!-- <p></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
 <table id="tbPublications" width="100%">
 	<tbody>
+	<!-- <tr>
+		<td width="306">
+		<img src="./files/sjtu.png" width="280px" style="margin-left: 0px; padding-top: 10px;">
+		</td>				
+		<td>
+		<p><b>OpenGVLab, Shanghai AI Laboratory (Pujiang National Laboratory)</b></p>
+		<p>Jan. 2024 - Present, Intern Researcher, Shanghai, China</p>
+		<p>Working with <a href="https://whai362.github.io/" target="_blank">Dr. Wenhai Wang</a>  </p>
+		<em>Topic: Diffusion Model & LLM for Robotic Manipulation</em>
+		</td>
+	</tr>
+	<tr></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr></tr>
+		<tr></tr> -->
 	<tr>
 		<td width="306">
 		<img src="./files/shlab.jpeg" width="200px" style="margin-left: 45px; padding-top: 10px;">
@@ -214,7 +257,7 @@
 		<tr></tr>
 		<tr></tr>
 		<tr></tr>
-	<tr></tr>
+		<tr></tr>
 		<tr></tr>
 		<tr></tr>
 		<tr></tr>
@@ -259,7 +302,7 @@
 
 <!-- <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1704962157&bvid=BV1BT421S7fM&cid=1553434132&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe> -->
 
-<h2> Publications (Selected) | <a href="">Full List</a></h2>
+<h2> Publications (Selected) | <a href="">[Full List ]</a></h2>
 <div style="height: 10px;"></div>
 <!--
 <div style="height: 1440px; overflow: auto;">
@@ -295,17 +338,19 @@
 	<!--########################-->
 	</tr><tr>
 	</tr><tr>
-		<td width="306">
-		<img src="./files/2024-UAV.png" width="220px" style="box-shadow: 4px 4px 8px #888; margin-left: 40px; margin-top: -10px;">
+		<td width="200">
+			<div class="container">
+				<img src="./files/2024-UAV.png" width="150px" style="box-shadow: 4px 4px 8px #888; margin-left: 20px; margin-top: 0px;">
+				<div class="arxiv-label" style="margin-left: 20px">arXiv</div>
+			</div>
 		</td>				
 		<td>
 			<b>Robust UAV Policy Learning for Urban Infrastructure Surface Screening</b>
-			<div style="height: 5px;"></div>
+			<!-- <div style="height: 5px;"></div> -->
 			<div style="font-size: small">Bingging Du<sup>1</sup>, Uddin Md. Borhan<sup>2</sup>, <b>Tianxing Chen</b>, Jianyong Chen, Jiangiang Li<sup>*</sup>, and Jie Chen<sup>*</sup></div>
-			<div style="height: 8px;"></div>
-			<div>Accepted by <em><b>ICARM 2024</b></em><br>(The IEEE International Conference on Advanced Robotics and Mechatronics)</div>
-			<div style="height: 5px;"></div>
-			<div> [<a href="">paper</a>] [<a href="">arXiv</a>] </div>
+			<!-- <div style="height: 8px;"></div> -->
+			<div style="font-size: small">The IEEE International Conference on Advanced Robotics and Mechatronics (<b>ICARM</b>), 2024</div>
+			<!-- <div style="height: 5px;"></div> -->
 		</td>
 	</tr>
 	<tr></tr>
