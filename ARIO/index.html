@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务视频展示</title>
+    <style>
+        /* 简单的CSS样式 */
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px; /* 可以根据需要调整最大宽度 */
+            margin: auto;
+            overflow: hidden;
+        }
+        .task-title {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .video-container {
+            display: flex; /* 使用Flexbox布局 */
+            justify-content: center; /* 水平居中 */
+            margin-bottom: 20px;
+        }
+        video {
+            width: 33.3333%; /* 三个视频平分宽度 */
+            margin: 0 1%; /* 视频之间有1%的间隔 */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <video controls>
+        <source src="./videos/clean_ball-front-episode1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container">
+        <!-- 任务1 -->
+        <div class="task" id="task1">
+            <h2 class="task-title">任务1</h2>
+            <div class="video-container">
+                <video controls>
+                    <source src="./videos/clean_ball-front-episode1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls>
+                    <source src="./videos/clean_ball-left-episode1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video controls>
+                    <source src="./videos/clean_ball-right-episode1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <!-- 任务2 -->
+        <div class="task" id="task2">
+            <h2 class="task-title">任务2</h2>
+            <div class="video-container">
+                <!-- 重复上面的视频标签，更改视频文件路径 -->
+            </div>
+        </div>
+
+        <!-- 以此类推，为每个任务添加类似的结构 -->
+    </div>
+
+</body>
+</html>
