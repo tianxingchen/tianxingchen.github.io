@@ -25,57 +25,175 @@
             margin-bottom: 20px;
         }
         video {
-            width: 33.3333%; /* 三个视频平分宽度 */
+            width: 20%; /* 三个视频平分宽度 */
             margin: 0 1%; /* 视频之间有1%的间隔 */
             height: auto;
         }
     </style>
 </head>
 <body>
-    <video controls>
-        <source src="./videos/clean_ball_front_episode1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <div class="container">
-        <!-- 任务1 -->
-        <div class="task" id="task1">
-            <h2 class="task-title">将乒乓球扫入</h2>
-            <div class="video-container">
-                <video controls>
-                    <source src="./videos/clean_ball_front_episode1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <video controls>
-                    <source src="./videos/clean_ball_left_episode1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <video controls>
-                    <source src="./videos/clean_ball_right_episode1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+    <div class="task" id="task1">
+        <h2 class="task-title">Task1: 用小扫帚扫入乒乓球</h2>
+        <div class="video-container">
+            <video controls autoplay muted loop>
+                <source src="./videos/clean_ball_left_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls autoplay muted loop>
+                <source src="./videos/clean_ball_front_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls autoplay muted loop>
+                <source src="./videos/clean_ball_right_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
-
-        <!-- 任务2 -->
-        <div class="task" id="task1">
-            <h2 class="task-title">使用锤子锤打底座</h2>
-            <div class="video-container">
-                <video controls>
-                    <source src="./videos/hammer_knock_dian_front_episode1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <video controls>
-                    <source src="./videos/hammer_knock_dian_left_episode1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <video controls>
-                    <source src="./videos/hammer_knock_dian_right_episode1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+    </div>
+    
+    <div class="task" id="task2">
+        <h2 class="task-title">Task2: 使用锤子捶击标记</h2>
+        <div class="video-container">
+            <video controls autoplay muted loop>
+                <source src="./videos/hammer_knock_x_left_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls autoplay muted loop>
+                <source src="./videos/hammer_knock_x_front_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls autoplay muted loop>
+                <source src="./videos/hammer_knock_x_right_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
-
-        <!-- 以此类推，为每个任务添加类似的结构 -->
+    </div>
+    
+    <div class="task" id="task3">
+        <h2 class="task-title">Task3: 将水杯递给人</h2>
+        <div class="video-container">
+            <video controls autoplay muted loop>
+                <source src="./videos/hand_over_cup_left_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls autoplay muted loop>
+                <source src="./videos/hand_over_cup_front_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls autoplay muted loop>
+                <source src="./videos/hand_over_cup_right_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    
+    <div class="task" id="task4">
+        <h2 class="task-title">Task4: 用勺子呈面粉到盘子中</h2>
+        <div class="video-container">
+            <video controls autoplay muted loop>
+                <source src="./videos/mianfen_left_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls autoplay muted loop>
+                <source src="./videos/mianfen_front_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls autoplay muted loop>
+                <source src="./videos/mianfen_right_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    
+    <div class="task" id="task5">
+        <h2 class="task-title">Task5: 将杯子移动至杯垫</h2>
+        <div class="video-container">
+            <video controls autoplay muted loop>
+                <source src="./videos/pick_and_place_cup_left_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls autoplay muted loop>
+                <source src="./videos/pick_and_place_cup_front_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls autoplay muted loop>
+                <source src="./videos/pick_and_place_cup_right_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    
+    <div class="task" id="task6">
+        <h2 class="task-title">Task6: 调整刷子姿势</h2>
+        <div class="video-container">
+            <video controls autoplay muted loop>
+                <source src="./videos/pick_brash_left_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls autoplay muted loop>
+                <source src="./videos/pick_brash_front_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls autoplay muted loop>
+                <source src="./videos/pick_brash_right_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    
+    <div class="task" id="task7">
+        <h2 class="task-title">Task7: 从人手接过杯子并转移到杯垫上</h2>
+        <div class="video-container">
+            <video controls autoplay muted loop>
+                <source src="./videos/transport_cup_to_beidian_left_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls autoplay muted loop>
+                <source src="./videos/transport_cup_to_beidian_front_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls autoplay muted loop>
+                <source src="./videos/transport_cup_to_beidian_right_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    
+    <div class="task" id="task8">
+        <h2 class="task-title">Task8: 使用百洁布刷盘子</h2>
+        <div class="video-container">
+            <video controls autoplay muted loop>
+                <source src="./videos/wash_dish_left_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls autoplay muted loop>
+                <source src="./videos/wash_dish_front_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls autoplay muted loop>
+                <source src="./videos/wash_dish_right_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    
+    <div class="task" id="task9">
+        <h2 class="task-title">Task9: 使用钢丝球刷锅</h2>
+        <div class="video-container">
+            <video controls autoplay muted loop>
+                <source src="./videos/wash_gangguo_left_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls autoplay muted loop>
+                <source src="./videos/wash_gangguo_front_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls autoplay muted loop>
+                <source src="./videos/wash_gangguo_right_episode1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    
     </div>
 
 </body>
