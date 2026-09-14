@@ -871,8 +871,8 @@
   .pub-list--compact .pub-item { padding: 10px; gap: 14px; }
   .pub-list--compact .pub-title { font-size: 14px; line-height: 1.35; }
   .pub-list--compact .pub-authors { margin-top: 4px; font-size: 12px; line-height: 1.45; }
-  .pub-list--compact .pub-venue { margin-top: 4px; font-size: 12px; }
-  .pub-list--compact .pub-award { margin-top: 4px; font-size: 12px; }
+  .pub-list--compact .pub-venue,
+  .pub-list--compact .pub-award { margin-top: 4px; font-size: 11.5px; }
   .pub-title { font-size: 16px; font-weight: 500; letter-spacing: -.015em; line-height: 1.3; }
   .pub-authors { font-size: 12.5px; color: var(--ink-faint); margin-top: 3px; line-height: 1.45; }
   .pub-authors .self { color: var(--ink); font-weight: 600; }
@@ -900,18 +900,24 @@
     text-decoration: underline;
     text-underline-offset: 2px;
   }
-  .pub-venue { margin-top: 4px; font-size: 12.5px; color: var(--ink-soft); line-height: 1.35; }
+  .pub-venue,
+  .pub-award {
+    margin-top: 4px;
+    font-size: 11.5px;
+    line-height: 1.35;
+  }
+  .pub-venue { color: var(--ink-soft); }
+  .pub-award { color: var(--ink); font-weight: 500; }
   .venue-name {
-    font-size: 11px; font-weight: 600;
+    font-size: inherit; font-weight: 600;
     letter-spacing: .05em; text-transform: uppercase; color: var(--accent);
     background: transparent; padding: 0; border-radius: 0;
   }
   .venue-rank {
-    font-size: 11px; font-weight: 600;
+    font-size: inherit; font-weight: 600;
     letter-spacing: .04em; color: var(--ink-faint);
   }
-  .pub-award { font-size: 12.5px; color: var(--ink); margin-top: 3px; font-weight: 500; line-height: 1.35; }
-  .pub-award .award-hl, .pub-venue .award-hl { color: #c62828; }
+  .award-hl { color: #c62828; font-weight: 600; }
   .pub-links { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 0; margin-top: 6px; }
   .pub-link {
     font-size: 12.5px; font-weight: 500; padding: 0 10px 0 0;
@@ -1517,7 +1523,7 @@
     .pub-thumb-placeholder { width: 96px; }
     .pub-title { font-size: 14.5px; }
     .pub-authors { font-size: 12px; }
-    .pub-venue, .pub-award { font-size: 12px; }
+    .pub-venue, .pub-award { font-size: 11.5px; }
     .pub-links { gap: 4px 0; }
     .pub-link { font-size: 12.5px; padding-right: 8px; }
     .pub-list--compact .pub-item { padding: 8px 4px; gap: 10px; }
@@ -2372,6 +2378,23 @@
         <span class="pub-group-meta">Operation</span>
       </div>
       <ul class="pub-list">
+        <!-- MoPA -->
+            <li class="pub-item">
+              <div class="pub-thumb">
+                <video src="./assets/files/work/2026-mopa.mp4" autoplay loop muted playsinline speed="10.0"></video>
+              </div>
+              <div class="pub-body">
+                <div class="pub-title">MoPA: Coordinated Mobile Manipulation via Subsystem-Specific Perception Alignment</div>
+                <div class="pub-authors">Guangyu Chen*, Qiwei Liang*, Shaolong Zhu*, <span class="self">Tianxing Chen*</span>, Zikuan Xiao, Yifan Xie, Lingfeng Zhang, Ping Luo, Renjing Xu†, Wenbo Ding†</div>
+                <div class="pub-venue"><span class="venue-name">Under Review</span></div>
+                <div class="pub-links">
+                  <a class="pub-link" href="https://mopa-policy.github.io/" target="_blank">Project Page</a>
+                  <a class="pub-link" href="https://arxiv.org/pdf/2609.12081" target="_blank">Paper</a>
+                  <a class="pub-link" href="https://arxiv.org/abs/2609.12081" target="_blank">arXiv</a>
+                  <!-- <a class="pub-link" href="https://github.com/TianxingChen/G3Flow" target="_blank">Code</a> -->
+                </div>
+              </div>
+            </li>
 <!-- EventVLA -->
             <li class="pub-item">
               <div class="pub-thumb">
@@ -2466,7 +2489,8 @@
               <div class="pub-body">
                 <div class="pub-title">ManiCM: Real-time 3D Diffusion Policy via Consistency Model for Robotic Manipulation</div>
                 <div class="pub-authors">Guanxing Lu*, Zifeng Gao*, <span class="self">Tianxing Chen</span>, Wenxun Dai, Ziwei Wang, and Yansong Tang†</div>
-                <div class="pub-venue"><span class="venue-name">IEEE RCAR 2026</span> <span class="award-hl">Best Conference Paper Finalist</span></div>
+                <div class="pub-venue"><span class="venue-name">IEEE RCAR 2026</span></div>
+                <div class="pub-award"><span class="award-hl">Best Conference Paper Finalist</span></div>
                 <div class="pub-links">
                   <a class="pub-link" href="https://manicm-fast.github.io/" target="_blank">Project Page</a>
                   <a class="pub-link" href="https://arxiv.org/pdf/2406.01586" target="_blank">Paper</a>
