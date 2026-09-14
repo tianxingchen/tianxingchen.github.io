@@ -3,7 +3,7 @@ import subprocess
 from PIL import Image
 
 # 目标大小 (3MB)
-TARGET_SIZE = 3 * 1024 * 1024  
+TARGET_SIZE = 1.5 * 1024 * 1024  
 
 def compress_video(file_path):
     """使用 ffmpeg 压缩 mp4，直到小于目标大小"""
